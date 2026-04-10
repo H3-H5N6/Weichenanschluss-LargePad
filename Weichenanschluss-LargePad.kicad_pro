@@ -16,7 +16,7 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.05,
-        "dimension_precision": 4,
+        "dimension_precision": 5,
         "dimension_units": 3,
         "dimensions": {
           "arrow_length": 1270000,
@@ -55,7 +55,44 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|100972500|78618000|394a397a-5fc6-47ba-9c66-8543bbf72e6e|55c92a7b-ddb8-42f1-9462-025044828a94",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|105100000|78618000|394a397a-5fc6-47ba-9c66-8543bbf72e6e|afdec00b-b513-4251-ac75-b51e7276115f",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|109227500|78618000|394a397a-5fc6-47ba-9c66-8543bbf72e6e|96a5a8e3-f3e0-4878-9aa0-2724f4f27f4c",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|110165000|78618000|394a397a-5fc6-47ba-9c66-8543bbf72e6e|ea35e930-8615-45fb-bff2-cc4e7ec6f961",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|120975000|88270000|90d8e1c1-c950-42e5-a50e-ff4363b8176e|f2dd8195-5dec-4767-8a91-782964042d71",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|124467500|88270000|6c7ce893-6edf-444f-b562-dbeaea58e148|90d8e1c1-c950-42e5-a50e-ff4363b8176e",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|128595000|88270000|2f07cb6e-f152-4c02-af78-f682db781354|90d8e1c1-c950-42e5-a50e-ff4363b8176e",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|130652194|88270000|90d8e1c1-c950-42e5-a50e-ff4363b8176e|a986da00-96bc-4c2e-9580-0967594ca1ba",
+          "Überlappung ist so gewollt"
+        ],
+        [
+          "courtyards_overlap|96398000|78618000|394a397a-5fc6-47ba-9c66-8543bbf72e6e|cc9614e8-327b-40f4-b1e9-48f6c7350c3d",
+          "Überlappung ist so gewollt"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -231,7 +268,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "v1.1"
     },
     "layer_pairs": [],
     "layer_presets": [],

@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,68 +9,81 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting
+			(front yes)
+			(back yes)
+		)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(capping no)
+		(filling no)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 6)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
-			(hpglpennumber 1)
-			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -79,26 +92,14 @@
 			(outputdirectory "")
 		)
 	)
-	(net 0 "")
-	(net 1 "Net-(J1-Pin_1)")
-	(net 2 "Net-(J2-Pin_1)")
-	(net 3 "Net-(J23-Pin_1)")
-	(net 4 "Net-(J25-Pin_1)")
-	(net 5 "Net-(J26-Pin_1)")
-	(net 6 "Net-(J27-Pin_1)")
-	(net 7 "Net-(J28-Pin_1)")
-	(net 8 "GND")
-	(net 9 "+12V")
-	(net 10 "Net-(J12-Pin_1)")
-	(net 11 "Net-(J13-Pin_1)")
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "053c24ce-e576-4e1f-9619-5f1ec00f0aab")
 		(at 111.76 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J25"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "72081096-352f-48b6-a3fb-0bc0551391f9")
@@ -120,20 +121,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "25769e31-177d-4cc3-b8e7-d5c9bb0631ef")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e37d3b19-9fdf-48d8-90ad-b1206e032c63")
@@ -145,7 +134,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ccde12f5-dc5c-4481-a7cc-27ff7cc2cb8e")
@@ -156,11 +145,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73874f02-38cc-4b68-adc2-cb294270c122")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/80806d45-0ae7-4c11-b803-21f619a7aeba")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -241,29 +248,18 @@
 			(layer "F.CrtYd")
 			(uuid "2726148e-1007-4a34-aaa9-4f8f41785a90")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a379921f-4141-475d-8eb6-70dd87db0217")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 4 "Net-(J25-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J25-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "630a5f1f-b7dc-4c07-a59c-4c92597e14a2")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "11494ea0-a579-4167-a5ba-f233ab3a9664")
 		(at 150.1775 87.3125)
@@ -293,18 +289,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "46a4ee92-866b-43dc-abf9-13618426ed4c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -329,11 +313,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08817a7b-97b1-463c-9cf9-68ea41bdf7fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b831e43b-cc34-4944-bfac-77ccadbc5ec3")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 -1.3)
 			(end 3.95 -1.3)
@@ -414,27 +416,16 @@
 			(layer "F.CrtYd")
 			(uuid "6012bc00-7517-4291-b6d1-b9fa176b0ee6")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fe4c57c2-09e7-454a-a746-cd55f1cfed23")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 5 "Net-(J26-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J26-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "670b160a-14be-4390-8af6-f13fd60f4e88")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2.1mm"
 		(layer "F.Cu")
@@ -466,18 +457,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2cd0d910-b30f-4453-8fe9-84f6700a5e9d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -504,9 +483,15 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/bd1c1ee3-48f1-4217-8c7c-fbd5dc14bd27")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 2.1 0)
@@ -514,7 +499,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "d86b8585-7b32-40d4-9e40-41969bdb93c1")
 		)
@@ -525,7 +510,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "a2460d77-50c6-41c0-95ca-e698e33590f8")
 		)
@@ -547,8 +532,9 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "269949c5-e809-4ad5-aa4d-8c2d6d54c3e1")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "2165bb60-4c81-4232-a21c-16de5b2f9826")
 		(at 88.265 87.3125 180)
@@ -578,18 +564,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "025ec03a-a465-4e7b-8d8a-6c131a1d7221")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -614,11 +588,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d2dd2d9-7acc-4530-9156-9ab29f653132")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/20540cba-56d8-42d6-a57a-c14c218a5023")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 1.3)
 			(end -3.95 1.3)
@@ -699,29 +691,18 @@
 			(layer "F.CrtYd")
 			(uuid "d3021d4d-7b48-4208-9869-6c6e967eb64f")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0d43f577-5511-46ef-9dd0-4ab92df6116d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 180)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 5 "Net-(J26-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J26-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "ea063fc5-82af-4579-9312-8def3f67dae9")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "2e0276f3-c1be-43d1-a220-1bb7785d747d")
 		(at 122.8725 80.645 90)
@@ -751,18 +732,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0e6dd8e4-629b-4ea9-ae6e-d9cdc705bd6e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -787,11 +756,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fb06573-7caf-4940-9fdd-436232475a28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/f5679575-cbd7-4ba0-b466-ffef65aa6611")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -872,36 +859,25 @@
 			(layer "F.CrtYd")
 			(uuid "e329c0ce-1a14-4ef5-91fc-79c30e2cc24d")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "160e8b8b-05c6-4651-9464-d7524032e00a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 7 "Net-(J28-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J28-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "e5226f77-1f19-49bb-9782-392b67ecbb85")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "2f07cb6e-f152-4c02-af78-f682db781354")
 		(at 127 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J29"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2c91c599-1d81-4b63-889e-399330f6ab73")
@@ -924,20 +900,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "15cb04b0-efbf-46fb-a888-b99f0a961cf5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1b33a2ae-6382-49ee-84d4-8152083895f1")
@@ -949,7 +913,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0ccd79cc-8561-412a-b3f6-e162b1ad85e1")
@@ -960,11 +924,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a653e17d-2e25-4fb4-b530-b80649c524b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/95f02cf9-dcce-41d1-9edc-cbe08e35b2b5")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -1045,29 +1027,18 @@
 			(layer "F.CrtYd")
 			(uuid "ffc2b435-7a72-474f-96b1-8c834419f461")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "44d47081-a415-4885-a8fc-a1bca6350e67")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 8 "GND")
-			(pinfunction "Pin_1")
+			(net "GND")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "57940e3e-cdbd-4782-9fb7-9750a9ad6228")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "3005c88c-2324-4e95-bc30-007302a7d7e6")
 		(at 150.1775 82.8675)
@@ -1097,18 +1068,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1a2cc1e2-0384-4f29-8ccf-5063093f7df8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1133,11 +1092,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7e470d6-4a0b-439e-9314-591dba2ab473")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d1ae3ae6-fb24-4797-bf74-2e3e424dbf83")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 -1.3)
 			(end 3.95 -1.3)
@@ -1218,11 +1195,28 @@
 			(layer "F.CrtYd")
 			(uuid "dc909869-5206-42c7-a5b2-a822724824ca")
 		)
-		(fp_text user "${REFERENCE}"
+		(pad "1" smd rect
+			(at 0 0)
+			(size 7.5 2.2)
+			(layers "F.Cu" "F.Mask")
+			(net "Net-(J25-Pin_1)")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
+			(uuid "e09ffb43-098f-4cce-8866-b208c55833ff")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Text:Text"
+		(layer "F.Cu")
+		(uuid "394a397a-5fc6-47ba-9c66-8543bbf72e6e")
+		(at 102.743 79.883)
+		(descr "Text F+B")
+		(tags "text")
+		(property "Reference" "Tx1"
 			(at 0 -2.286 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e6f7a9d1-8422-4788-b4d1-f82a7511aa67")
+			(uuid "bfd376fe-f0b5-462c-b472-adcc010b88a2")
 			(effects
 				(font
 					(size 1 1)
@@ -1230,17 +1224,119 @@
 				)
 			)
 		)
-		(pad "1" smd rect
-			(at 0 0)
-			(size 7.5 2.2)
-			(layers "F.Cu" "F.Mask")
-			(net 4 "Net-(J25-Pin_1)")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "e09ffb43-098f-4cce-8866-b208c55833ff")
+		(property "Value" "©H3-H5N6"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb063ea2-0c42-4371-b18d-61bcc4382650")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
 		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73b6faae-9879-4996-af45-83c7bf0e4738")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Text"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "722c77d5-b8cd-4262-99a8-33576f460370")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/183de392-4ccb-4b02-b375-cee866be0389")
+		(sheetname "/")
+		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -6.35 -1.27)
+			(end 7.62 -1.27)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "62d1f725-f690-44d8-a7a8-f70003cd825e")
+		)
+		(fp_line
+			(start -6.35 1.524)
+			(end -6.35 -1.27)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "48ce7414-138d-4cd0-a665-9e8c5c8d4ccd")
+		)
+		(fp_line
+			(start 7.62 1.524)
+			(end -6.35 1.524)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "4e897740-78bb-40dc-ab37-b745fc670a8b")
+		)
+		(fp_line
+			(start 7.62 1.524)
+			(end 7.62 -1.27)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "d5337945-4eee-44fd-9c59-0db53de4c65b")
+		)
+		(fp_text user "${VALUE}"
+			(at 0.762 0.254 0)
+			(layer "B.SilkS")
+			(uuid "fcc53649-56a8-49c3-9919-cbe0b64ca828")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(fp_text user "${VALUE}"
+			(at 0.508 0.254 0)
+			(layer "F.Fab")
+			(uuid "da2fd66a-33f4-47e4-a2a8-ec6e9de2cd30")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+					(bold yes)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "55c92a7b-ddb8-42f1-9462-025044828a94")
 		(at 99.3775 80.645 90)
@@ -1270,18 +1366,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cb9bad25-7aa4-416e-b9b0-cd8a79190d6f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -1306,11 +1390,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3aa88c91-d731-4fbc-a1f5-0ff6f99c8f82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/aee4f739-f429-4c16-8eb6-9c906fab7bf7")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -1391,29 +1493,18 @@
 			(layer "F.CrtYd")
 			(uuid "f22cddc5-68cc-4492-8c6a-11b80395e4d6")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fc1014c3-7d9e-4a98-ac00-392b289ef2ed")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 2 "Net-(J2-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J2-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "3244f9ae-20bb-4722-9866-d91a05e4a27b")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "610bb501-4269-4df2-9aef-9c08b00a5fcd")
 		(at 135.255 89.535 90)
@@ -1443,18 +1534,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "60328e7d-7f22-4f2c-bf6d-c80f1f7ab93e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -1479,11 +1558,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d39c8b8-b2bc-4ccc-ae58-65255a562bde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/91fe780e-9470-4c46-9ac8-2ca3168499cb")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -1564,29 +1661,18 @@
 			(layer "F.CrtYd")
 			(uuid "58b01160-6f55-46d7-a718-d22f36c88d5d")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9f738f0-ef4f-4d7a-bb54-6577ff6c7a66")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 9 "+12V")
-			(pinfunction "Pin_1")
+			(net "+12V")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "38d505d2-80a4-4781-ae17-d257ab5bb2ad")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "68e32f6c-d620-483c-903f-b6b5c9c29149")
 		(at 119.38 80.645 90)
@@ -1616,18 +1702,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b581ca75-2cf4-4d3f-99f3-3600743100ed")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -1652,11 +1726,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "627c92b7-40d1-4da1-b09f-c2ac881a28b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/3926b2e7-b607-4ab5-8f15-753ec193deb7")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -1737,36 +1829,25 @@
 			(layer "F.CrtYd")
 			(uuid "4143de34-7aed-40bd-bcac-d51e67ca7c68")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fcabafb5-3583-4a1d-8b3e-26ec5e6bb679")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 6 "Net-(J27-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J27-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "85715c18-5a5c-4ce9-9931-f5c669ff91b6")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "6c7ce893-6edf-444f-b562-dbeaea58e148")
 		(at 122.8725 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J28"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "aa1ae866-677f-4798-9933-3558885a2022")
@@ -1789,20 +1870,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d98925be-f804-42c5-8ce7-6a5181b266f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ec679fa8-7693-4c71-b102-29559d7baa8c")
@@ -1814,7 +1883,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5a835451-c8b2-462d-ab31-af1eae6bc0e5")
@@ -1825,11 +1894,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87bdf417-3768-4b45-b1e9-885502ca2cb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/9afabe44-75cd-45b2-9b81-bdb34930d6ac")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -1910,36 +1997,25 @@
 			(layer "F.CrtYd")
 			(uuid "503479a1-4da6-44cc-bc99-9cb6d9c2bf00")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "49e7da7d-44a8-4046-9a10-e653c8da3a83")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 7 "Net-(J28-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J28-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "fc7183e4-6068-419a-bfea-f29040fb528f")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "73e604ac-34c5-4d5b-8ff6-59fbbb0e5895")
 		(at 115.2525 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J26"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7516ce3a-dc56-47b1-9bfa-2f421130ffec")
@@ -1962,20 +2038,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "93b0e149-12d0-4588-8cc4-0998cfcd0ec3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "32d1f1b5-1808-404f-95f8-6638d18899ff")
@@ -1987,7 +2051,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "373c2b2f-5778-4150-838b-fedd0fb8182f")
@@ -1998,11 +2062,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f508025-414a-4567-a92a-451836ce46aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/e8da2163-59ec-45b3-825f-c86fd8cc0f9b")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -2083,29 +2165,18 @@
 			(layer "F.CrtYd")
 			(uuid "d8e31f2a-f2f5-4d40-9c25-1880e70b5dde")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "068d4675-eb80-491b-bfac-0da1c1a32fd6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 5 "Net-(J26-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J26-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "adbc64ad-1bbc-4be9-996c-6f153a64d89d")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "7cc4a8ba-5dc8-40e0-8a88-0e3a4e8e711b")
 		(at 150.1775 76.835 180)
@@ -2135,18 +2206,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bb660c1a-940c-4bf6-a38c-f9e24f30e1cb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -2171,11 +2230,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5e21c42-9e03-4fe0-9b82-baa6b2361e03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5c2e7445-7786-4957-b863-87a459b6c127")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 1.3)
 			(end -3.95 1.3)
@@ -2256,36 +2333,25 @@
 			(layer "F.CrtYd")
 			(uuid "44e79002-486e-4bbc-b958-2ed18bbe1669")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7172b7b0-d83f-4e06-82c6-dc6d001aeb34")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 180)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 9 "+12V")
-			(pinfunction "Pin_1")
+			(net "+12V")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "fa9285a5-77f0-48b7-9ffd-ca08e0f2eac0")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "860aace3-f23c-4dcf-856a-166ecb1860fa")
 		(at 95.885 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J21"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c132dffd-a9bc-4368-bf0d-7d47e14e0886")
@@ -2308,18 +2374,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9c11472a-361e-4d02-b206-7f11b667d07a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 6.35 185.42 0)
 			(layer "F.Fab")
@@ -2333,7 +2387,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "93562de7-208b-4047-b503-9c303ef13ae6")
@@ -2344,11 +2398,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8f08626-183c-4285-9ea8-10ff54d5219a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/3e5b487a-5234-4bd6-9540-03bff99ac2e6")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -2429,29 +2501,18 @@
 			(layer "F.CrtYd")
 			(uuid "aa79e703-cb5d-4fa7-9263-97c765d455ab")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef381c9c-e3d6-4d86-b857-6a77438c2de6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 1 "Net-(J1-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J1-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "26bd05d9-1dbd-40cf-94fa-8a2188e8e2df")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "8e976d80-f5e3-47f6-9b9c-87434ed705e4")
 		(at 88.265 82.8675 180)
@@ -2481,18 +2542,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "29ecfa93-1be3-4be8-8aa4-a0b10344ebb6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -2517,11 +2566,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb179309-eb40-4217-8934-c0371b57d215")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/7859665e-db3c-454a-bc3a-7a4ac206c2e0")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 1.3)
 			(end -3.95 1.3)
@@ -2602,11 +2669,28 @@
 			(layer "F.CrtYd")
 			(uuid "57ea4821-d229-48a8-a483-b35cc240041c")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 180)
+		(pad "1" smd rect
+			(at 0 0 180)
+			(size 7.5 2.2)
+			(layers "F.Cu" "F.Mask")
+			(net "Net-(J25-Pin_1)")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
+			(uuid "3cde46f5-14f8-4651-b61e-7546751b6780")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Text:Text"
+		(layer "F.Cu")
+		(uuid "90d8e1c1-c950-42e5-a50e-ff4363b8176e")
+		(at 124.587 89.535)
+		(descr "Text F+B")
+		(tags "text")
+		(property "Reference" "Tx2"
+			(at 0 -2.286 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3cd7ae9e-0db8-49c5-a83b-300ea36d5239")
+			(uuid "235076ae-dad2-430c-8050-18c0cb000b4f")
 			(effects
 				(font
 					(size 1 1)
@@ -2614,17 +2698,119 @@
 				)
 			)
 		)
-		(pad "1" smd rect
-			(at 0 0 180)
-			(size 7.5 2.2)
-			(layers "F.Cu" "F.Mask")
-			(net 4 "Net-(J25-Pin_1)")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "3cde46f5-14f8-4651-b61e-7546751b6780")
+		(property "Value" "Weichenanschluss-LargePad v1.1"
+			(at 0 3.2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb1e9750-a69b-4c83-88f2-b3cb02ef3641")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
 		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58b694df-d121-49ff-be95-100035bd18f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Text"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ca5d57a-c80d-4fd5-ba5e-e5349a492e05")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/de1e3047-8548-44c7-aab9-3b1be5de3a38")
+		(sheetname "/")
+		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -6.35 -1.27)
+			(end 7.62 -1.27)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "3fc58f63-2f5b-4215-aaa4-8b21fee2d103")
+		)
+		(fp_line
+			(start -6.35 1.524)
+			(end -6.35 -1.27)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "24576eb3-7baf-44a8-9653-f7b3d152c14a")
+		)
+		(fp_line
+			(start 7.62 1.524)
+			(end -6.35 1.524)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "290e1a26-16ad-491d-98be-f9c92ec7be32")
+		)
+		(fp_line
+			(start 7.62 1.524)
+			(end 7.62 -1.27)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "0c624429-4791-4c83-afee-58bdf1f01bb2")
+		)
+		(fp_text user "${VALUE}"
+			(at 5.715 0.762 0)
+			(layer "B.SilkS")
+			(uuid "4771e62a-cea5-46a4-a019-c739bfe5b334")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+					(bold yes)
+				)
+				(justify mirror)
+			)
+		)
+		(fp_text user "${VALUE}"
+			(at 1.27 -0.127 0)
+			(layer "F.Fab")
+			(uuid "e4a1f5e3-db60-4307-97c8-c1be881bacdc")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+					(bold yes)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "96a5a8e3-f3e0-4878-9aa0-2724f4f27f4c")
 		(at 107.6325 80.645 90)
@@ -2654,18 +2840,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7b30e493-6fc0-465a-a883-c36f50f58312")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2690,11 +2864,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6487f93a-03ab-4704-891b-a318cc4b2bcb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/94252f25-0029-4bb4-a7a0-e82dc633cea6")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -2775,29 +2967,18 @@
 			(layer "F.CrtYd")
 			(uuid "e49bbf21-d8a3-419a-a0b8-cb7b3c6f2021")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c449343b-66cd-45cd-a882-9ac4af828bcb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 3 "Net-(J23-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J23-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "cc1e288d-eea4-4911-8dfe-b0a3f2e6781c")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "999d0e95-991e-42ef-b836-2766637244fb")
 		(at 127 80.645 90)
@@ -2827,18 +3008,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "54b8d01b-2222-483f-9e3e-d3c84c57146c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2863,11 +3032,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b5c4bce-a4a6-408e-851a-c0d67957267d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/93112d23-f163-45a2-b80d-dcbcd6a7db6e")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -2948,36 +3135,25 @@
 			(layer "F.CrtYd")
 			(uuid "e6e4576f-1357-437a-95b5-00a79dda0ff4")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1bb71a61-8c0b-483e-a996-fb4a1b985884")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 8 "GND")
-			(pinfunction "Pin_1")
+			(net "GND")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "f6489213-bb6e-47f7-b13d-8598139c1312")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "a986da00-96bc-4c2e-9580-0967594ca1ba")
 		(at 131.1275 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J30"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3cc89b40-ee86-4a19-b5ef-76d75017a328")
@@ -3000,20 +3176,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8ace44d9-3293-42f7-a856-e6afafd7c5c0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "37f0378b-1427-49ff-84bf-2456a74cc49a")
@@ -3025,7 +3189,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f3e6fc0a-5741-4b88-a43a-90acdd114dfd")
@@ -3036,11 +3200,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d544d74-c7e5-4311-a0b5-b08f51723ee3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d80ce047-e103-4aa4-9f83-1cba9031b154")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -3121,29 +3303,18 @@
 			(layer "F.CrtYd")
 			(uuid "c4cfdfcd-210e-4975-85db-e3fa7e6372f5")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "48708e6e-8135-4e64-abd0-9294b3f981f4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 8 "GND")
-			(pinfunction "Pin_1")
+			(net "GND")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "5db4f118-31bf-49a9-a133-5e3e1fe4ac92")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "aaf2ce12-b788-4590-8905-e0f6c9e8fcfb")
 		(at 88.265 93.345)
@@ -3173,18 +3344,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "37bc6b65-2579-403a-874f-1e1e30687b6f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3209,11 +3368,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ed0752b-8946-418a-9bb3-6a2bb2977421")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/0587b19b-6840-4409-b041-afa88189b4ad")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 -1.3)
 			(end 3.95 -1.3)
@@ -3294,29 +3471,18 @@
 			(layer "F.CrtYd")
 			(uuid "7ef768e9-53c4-4fa5-b2e1-7ceaf0ff7a94")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2e092c60-6334-4f7e-a808-80e2cc23c861")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 8 "GND")
-			(pinfunction "Pin_1")
+			(net "GND")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "e49d2a8c-519e-4c16-be91-384066127193")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "afdec00b-b513-4251-ac75-b51e7276115f")
 		(at 103.505 80.645 90)
@@ -3346,18 +3512,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd292bc3-6b33-4b1e-b43c-90636ed110a5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -3382,11 +3536,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "926e6137-8d7d-49e6-a1cc-6f07097969a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5c5b84d9-65d8-43e8-afa6-a112a33cde90")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -3467,29 +3639,18 @@
 			(layer "F.CrtYd")
 			(uuid "fe5b9141-dcb4-4999-9a3a-5567f901ca2b")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "700dfa7d-7cc9-4878-9009-ab2de64e4ce9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 3 "Net-(J23-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J23-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "07c331d4-76c8-4a58-8ef2-cceb4b30464b")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "bc49c7cd-296d-4dd9-9cd1-8c63126e727b")
 		(at 135.255 80.645 90)
@@ -3519,18 +3680,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8a9409f5-3d1c-49d0-8aa8-268976ed603c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -3555,11 +3704,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4cbfea80-27e8-4718-92e2-2ac278f5bd92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/1d742f45-12d4-4b76-9564-b10da51f07ea")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -3640,29 +3807,18 @@
 			(layer "F.CrtYd")
 			(uuid "600baa98-b369-45c0-8f54-202037892ca8")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "22c88aea-2e76-4041-9d2c-96532967435d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 9 "+12V")
-			(pinfunction "Pin_1")
+			(net "+12V")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "e45eb7a2-a965-4347-b413-a4fdd64f866f")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "be335980-412f-43d4-8b2c-87871ef2d70a")
 		(at 88.265 76.835)
@@ -3692,18 +3848,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a515cc08-46c1-4582-98c8-869b512ddd1e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3728,11 +3872,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc6d7881-91df-4e89-926d-497e46a2dd72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/39fcc459-90bb-49fe-8bd7-f01d889d8fe3")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 -1.3)
 			(end 3.95 -1.3)
@@ -3813,29 +3975,18 @@
 			(layer "F.CrtYd")
 			(uuid "b09ab09d-d70d-47a9-96e4-5cbcb27ee9f9")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "535c8463-b684-4aa2-a4bf-dd5335af3c42")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 9 "+12V")
-			(pinfunction "Pin_1")
+			(net "+12V")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "f3826900-c949-4ea4-8e6f-f94b1da0f427")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "c88a6a6c-9217-4c53-80b5-37ad89863e17")
 		(at 150.1775 93.345)
@@ -3865,18 +4016,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "05dccdb3-03f8-4065-b072-8c633b2173f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3901,11 +4040,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a294f7e8-7abf-48b2-83b3-993828940a52")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/7b2cf55d-4515-49cd-82a4-e4122e0f5aae")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 -1.3)
 			(end 3.95 -1.3)
@@ -3986,29 +4143,18 @@
 			(layer "F.CrtYd")
 			(uuid "c0d0bda7-5125-4cf5-b998-a3ec12c5ac82")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "859e5ec2-ec7c-41c9-a6ae-18e0e7c08cca")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 8 "GND")
-			(pinfunction "Pin_1")
+			(net "GND")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "2baa3a12-afc5-4eae-9591-a547015bd440")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "c8c83ab9-e32b-45f8-8e37-f20fe10156cf")
 		(at 139.3825 89.535 90)
@@ -4038,18 +4184,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dd038afb-551d-43e8-8ec0-e44405f73286")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -4076,9 +4210,15 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/af2a1a9b-02f9-4517-a578-b6ccbd73ed1b")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -4174,13 +4314,14 @@
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 10 "Net-(J12-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J12-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "990107e1-285d-463a-94fb-cc24ef8bf8bb")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "cc9614e8-327b-40f4-b1e9-48f6c7350c3d")
 		(at 95.885 80.645 90)
@@ -4210,18 +4351,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "95c68047-123a-4765-9296-05420d4fdb82")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -4246,11 +4375,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "263c1bc3-e19f-4e4a-8d71-a88d683136c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ab43be0d-f033-47a7-8568-65893bf346aa")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -4331,29 +4478,18 @@
 			(layer "F.CrtYd")
 			(uuid "539c2fa3-a32e-4229-89bf-516dca659fb0")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9e43bbc8-800f-4369-a6bc-545a536925e5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 1 "Net-(J1-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J1-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "eb83bed9-8437-4a9e-8dc0-bdf682934381")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "cca2ede9-0b10-4610-b790-3f73c72770fa")
 		(at 139.3825 80.645 90)
@@ -4383,18 +4519,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3e9b9ca3-9f39-40fb-bcd5-47d4d7ae4c92")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -4419,11 +4543,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d58080b-25fc-4fdf-80f1-b6da08826ed2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/302f09a6-9c79-4bfc-8f08-b7b29d0e1fa0")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -4504,29 +4646,18 @@
 			(layer "F.CrtYd")
 			(uuid "65f49310-8396-407f-af52-4d906d9e683d")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "85639f1d-0ed1-45d2-afdd-7fa038e69074")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 10 "Net-(J12-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J12-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "1799fc0e-c128-4cdb-907e-ddb4e23db7b5")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "d110495a-ae98-4052-84be-84c50fd3ce02")
 		(at 115.2525 80.645 90)
@@ -4536,7 +4667,7 @@
 			(at 0 -1.998 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "91692be3-cda3-4bb2-b6d3-7e2d2fb1a612")
+			(uuid "feeb738a-3fc0-4054-8ef3-0e077f822fed")
 			(effects
 				(font
 					(size 1 1)
@@ -4545,9 +4676,9 @@
 			)
 		)
 		(property "Value" "A2.2"
-			(at 5.08 -1.27 180)
+			(at 5.08 -1.3335 180)
 			(layer "F.SilkS")
-			(uuid "a6ad0976-4b54-4953-a223-95a641a39010")
+			(uuid "4a4ab712-42e6-40c3-b0fe-06709512513a")
 			(effects
 				(font
 					(size 1 1)
@@ -4556,23 +4687,11 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6015da1e-1ccd-406f-be68-f13ea0053422")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "49c22e96-1bf3-4aeb-980f-ae5865808e62")
+			(uuid "e7b4f225-4aea-456d-9371-3322b2e727e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +4703,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "68ac3b4c-5acc-4170-adab-48bcd3fdbdc5")
+			(uuid "0460a077-94af-4ecb-866a-b8230dd716d4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,11 +4711,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0660026-bce5-4027-8ad0-647d2dc9542d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8bc054de-0fa8-4cf0-b3fa-eb2a2a8384c1")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -4677,36 +4814,25 @@
 			(layer "F.CrtYd")
 			(uuid "4888498d-a076-4c5a-9680-1993c992e99b")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "93827227-9e45-4236-b29c-5176dc6fca13")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 5 "Net-(J26-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J26-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "43634be8-b86f-4708-a53a-3e1ac657dbfb")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "dc90c692-5d94-41aa-b02e-2aaedd2f6f5e")
 		(at 103.505 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J23"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "91c57f77-fcc7-4a0c-9baa-f4c1933d8f3c")
@@ -4729,20 +4855,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cd116fb5-7195-490b-9bd3-a380e7d9dcef")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8342a61b-a14e-4d4a-b083-69871c3c1abf")
@@ -4754,7 +4868,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7e9abaa2-3490-431c-9945-aaf633365a57")
@@ -4765,11 +4879,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad1c3495-f0c9-419d-b8e7-e325efd3648e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6c748ec2-f050-449d-bd01-6c304d07d1fc")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -4850,29 +4982,18 @@
 			(layer "F.CrtYd")
 			(uuid "b7ee54f1-d764-4c6b-9f9e-f8a03d698d50")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "82bbf0cd-84c3-470b-86c4-50e7f3f7a5d9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 3 "Net-(J23-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J23-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "e14ec124-2128-4541-8514-4d6e9b3ccfde")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "e91f24b9-d99d-4d7f-8003-ef2826f99c5b")
 		(at 142.875 89.535 90)
@@ -4902,18 +5023,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ed596581-4217-4d7f-bce6-df255ec7ba85")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -4940,9 +5049,9 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/175aa1ca-a2bb-45e4-be43-f141f3f5c3ae")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -5038,13 +5147,14 @@
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 11 "Net-(J13-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J13-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "740f39ea-98f8-4914-90d3-505f641abbab")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "ea35e930-8615-45fb-bff2-cc4e7ec6f961")
 		(at 111.76 80.645 90)
@@ -5074,18 +5184,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "269a8b67-6f03-4483-914e-e75cb1a10a62")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5110,11 +5208,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b003af2-ed97-47b3-9d4b-2d13cac2d8ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/a8b0def0-fa2c-4c26-8411-b886789527dd")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -5195,36 +5311,25 @@
 			(layer "F.CrtYd")
 			(uuid "c36a4a8a-808e-4acb-99e9-c9c3cdffe08b")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89bd16a3-a212-4e8d-8d93-207443a52014")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 4 "Net-(J25-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J25-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "fece6a0a-4532-451a-97c2-58dd6e5aa623")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "f2dd8195-5dec-4767-8a91-782964042d71")
 		(at 119.38 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J27"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c266de09-0ae2-468a-afcc-dc0ca76a6e12")
@@ -5247,20 +5352,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cac54213-beaf-445b-8529-2aa19db2c829")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "32d329f3-8751-4711-b83b-a13f1eeb96ae")
@@ -5272,7 +5365,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "65c7f3de-b1fb-4347-a6cf-d864c5922982")
@@ -5283,11 +5376,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e8dd919-771f-4fff-af13-e205a7a53e83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/bf071283-1e4e-4c09-a600-d42645610876")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -5368,36 +5479,25 @@
 			(layer "F.CrtYd")
 			(uuid "aabb35e1-7345-4c9d-aab2-11482d72e447")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4bb65bfa-de7c-4f1d-a48f-84203282115f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 6 "Net-(J27-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J27-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "3adc32c5-0432-469f-9660-57ff75ab22af")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "f53a3387-ebf9-49a1-8464-52f3373f7548")
 		(at 99.3775 89.535 -90)
 		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "J22"
-			(at 0 -1.998 -90)
+			(at 0 -1.998 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2ac73e8c-842d-4766-9ea1-fca911582d52")
@@ -5420,20 +5520,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "72c9bce4-c6a1-4d7d-bec7-3871af877c13")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb1c172d-e0b3-4ee1-bf34-32e56bf2cde6")
@@ -5445,7 +5533,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dc9f6336-d947-471c-9425-ca51a80f5976")
@@ -5456,11 +5544,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "899861ec-934b-4313-89b7-ec95d7d9d55e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/e9d4aa46-05a3-43cd-a30d-4237535f48f1")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.95 1.3)
 			(end -3.95 -1.3)
@@ -5541,29 +5647,18 @@
 			(layer "F.CrtYd")
 			(uuid "af5c3d1e-6723-42c3-91d7-2ca15089c113")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5457e38f-5e96-413a-b3f6-60464d374611")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 270)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 2 "Net-(J2-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J2-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "fcdb2be8-c90d-4e1b-b41b-2b74064c4cca")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "Wago:Pad_7.5x2.2mm"
+	(footprint "Connector_Misc:Pad_7.5x2.2mm"
 		(layer "F.Cu")
 		(uuid "f9105eab-bae8-4aa4-94fa-0d3438faffd3")
 		(at 142.875 80.645 90)
@@ -5593,18 +5688,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Wago:Pad_7.5x2.2mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "850999c5-8f09-472f-81f4-8dc257b7a849")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5629,11 +5712,29 @@
 				)
 			)
 		)
+		(property "Field4" "${REFERENCE}"
+			(at 0 -2.286 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7935b3fd-f3dd-449b-98cb-5d61b2876541")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/496f2797-396e-496f-9856-795146bc8f88")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.95 -1.3)
 			(end 3.95 1.3)
@@ -5714,27 +5815,16 @@
 			(layer "F.CrtYd")
 			(uuid "164d9d74-5a04-48e8-a483-e75bd90338f7")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -2.286 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a60d2e95-9bf1-41d6-854b-16f009384c71")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(pad "1" smd rect
 			(at 0 0 90)
 			(size 7.5 2.2)
 			(layers "F.Cu" "F.Mask")
-			(net 11 "Net-(J13-Pin_1)")
-			(pinfunction "Pin_1")
+			(net "Net-(J13-Pin_1)")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "f4d83382-d784-447f-86aa-0aae80254743")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2.1mm"
 		(layer "F.Cu")
@@ -5766,18 +5856,6 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4f101dce-b74f-48dc-b654-c8bba3d49ca1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -5804,9 +5882,15 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/4e224fc9-2d30-4957-baa8-07a5ff6db019")
-		(sheetname "Stammblatt")
+		(sheetname "/")
 		(sheetfile "Weichenanschluss-LargePad.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
 			(end 2.1 0)
@@ -5814,7 +5898,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "972f143d-39cc-4b88-8136-3aaff3f9369e")
 		)
@@ -5825,7 +5909,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "4ad7e9ad-a245-409b-9bae-af63592b4142")
 		)
@@ -5847,6 +5931,27 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "1a77cf43-ca8b-40d9-a49a-07acfcf64759")
 		)
+		(embedded_fonts no)
+	)
+	(gr_line
+		(start 83.82 74.295)
+		(end 154.6225 74.295)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ba123f5e-7f44-42c7-9ade-1f606163c212")
+	)
+	(gr_line
+		(start 83.82 95.885)
+		(end 83.82 74.295)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "830a2822-2d59-466d-9f6c-c389dffb2534")
 	)
 	(gr_line
 		(start 154.6225 74.295)
@@ -5868,60 +5973,6 @@
 		(layer "Edge.Cuts")
 		(uuid "60854ecc-e28e-4a3f-9d95-0d9c78e02b6f")
 	)
-	(gr_line
-		(start 83.82 95.885)
-		(end 83.82 74.295)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "830a2822-2d59-466d-9f6c-c389dffb2534")
-	)
-	(gr_line
-		(start 83.82 74.295)
-		(end 154.6225 74.295)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "ba123f5e-7f44-42c7-9ade-1f606163c212")
-	)
-	(gr_text "©H3-H5N6 2022 Weichenanschluss v1.0\n"
-		(at 117.475 86.6775 0)
-		(layer "B.SilkS")
-		(uuid "de7211a4-ce7c-464a-b432-b18caf8db5f8")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "v1.0"
-		(at 131.1275 83.82 0)
-		(layer "F.SilkS")
-		(uuid "3bb91896-041c-45b7-a958-45121e7a66bd")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-			)
-		)
-	)
-	(gr_text "©H3-H5N6"
-		(at 131.445 75.2475 0)
-		(layer "F.SilkS")
-		(uuid "e695d45f-3c1f-4d73-ba5c-70c2261ce26f")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.125)
-			)
-		)
-	)
 	(dimension
 		(type aligned)
 		(layer "F.Cu")
@@ -5930,6 +5981,22 @@
 			(xy 83.82 95.885) (xy 154.6225 95.885)
 		)
 		(height 6.985)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
 		(gr_text "70,8025 mm"
 			(at 119.22125 101.07 0)
 			(layer "F.Cu")
@@ -5941,6 +6008,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Cu")
+		(uuid "44a55ebe-3846-4c3b-8dc2-8c1113974b91")
+		(pts
+			(xy 154.6225 74.295) (xy 154.6225 95.885)
+		)
+		(height -6.985)
 		(format
 			(prefix "")
 			(suffix "")
@@ -5952,17 +6028,11 @@
 			(thickness 0.2)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Cu")
-		(uuid "44a55ebe-3846-4c3b-8dc2-8c1113974b91")
-		(pts
-			(xy 154.6225 74.295) (xy 154.6225 95.885)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -6.985)
 		(gr_text "21,5900 mm"
 			(at 159.8075 85.09 90)
 			(layer "F.Cu")
@@ -5974,58 +6044,13 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.2)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(segment
-		(start 95.885 80.645)
-		(end 95.885 88.9)
-		(width 1)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "58d24e97-af67-4592-8c7b-93c917f2091a")
-	)
-	(segment
-		(start 99.3775 80.645)
-		(end 99.3775 89.535)
-		(width 1)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "80fd471b-f599-4c9d-8612-ec7cd8bb5619")
-	)
-	(segment
-		(start 103.505 89.535)
-		(end 103.505 80.645)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "6e9e060a-5acd-4fc0-96b9-b76f99e21451")
-	)
-	(segment
-		(start 103.505 80.645)
-		(end 107.6325 80.645)
-		(width 1)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "c1e77b8e-bfe9-45d0-bafb-b11e799b5d87")
 	)
 	(segment
 		(start 152.7175 82.8675)
 		(end 152.7175 80.645)
 		(width 1)
 		(layer "F.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "13b37f27-4784-4103-ac25-c5216ecee627")
 	)
 	(segment
@@ -6033,7 +6058,7 @@
 		(end 111.76 80.645)
 		(width 1)
 		(layer "F.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "181f317b-2286-4478-9215-320c8405f4a0")
 	)
 	(segment
@@ -6041,7 +6066,7 @@
 		(end 85.725 80.645)
 		(width 1)
 		(layer "F.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "410286c7-ea85-476b-8ca8-30e2c8c119fd")
 	)
 	(segment
@@ -6049,7 +6074,7 @@
 		(end 152.7175 82.8675)
 		(width 1)
 		(layer "F.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "ba7d5b82-d2de-4325-98fb-50e3177af471")
 	)
 	(segment
@@ -6057,7 +6082,7 @@
 		(end 85.725 82.8675)
 		(width 1)
 		(layer "F.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "e39cf597-440e-4887-a3fd-0eb0caf538b1")
 	)
 	(via
@@ -6065,7 +6090,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 4)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "Net-(J25-Pin_1)")
 		(uuid "1e148c19-9a83-4923-8246-bc2bc537b075")
 	)
 	(via
@@ -6073,7 +6108,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 4)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "Net-(J25-Pin_1)")
 		(uuid "5fe052c5-1d6d-4a2e-8d47-676fdd348007")
 	)
 	(via
@@ -6081,7 +6126,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 4)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "Net-(J25-Pin_1)")
 		(uuid "f8f7fbae-3f82-465f-92b2-a95a283ea1be")
 	)
 	(segment
@@ -6089,7 +6144,7 @@
 		(end 152.7175 81.5975)
 		(width 1)
 		(layer "B.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "17c3d383-a80e-4ca1-b95f-4f3b4ebf9b70")
 	)
 	(segment
@@ -6097,7 +6152,7 @@
 		(end 86.995001 83.185001)
 		(width 1)
 		(layer "B.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "2868dce1-6bac-4b16-9617-ca59bdd1c641")
 	)
 	(segment
@@ -6105,7 +6160,7 @@
 		(end 152.7175 80.645)
 		(width 1)
 		(layer "B.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "5c787143-26d6-4688-bc9b-19c885833808")
 	)
 	(segment
@@ -6113,7 +6168,7 @@
 		(end 85.725 81.915)
 		(width 1)
 		(layer "B.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "b75ea853-3bf9-4d9f-8f1a-dbedc4c1dda2")
 	)
 	(segment
@@ -6121,7 +6176,7 @@
 		(end 111.76 85.09)
 		(width 1)
 		(layer "B.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "c289d548-cddb-48ef-af62-b0e890758ed9")
 	)
 	(segment
@@ -6129,7 +6184,7 @@
 		(end 151.129999 83.185001)
 		(width 1)
 		(layer "B.Cu")
-		(net 4)
+		(net "Net-(J25-Pin_1)")
 		(uuid "f881927a-fd17-4313-8aa9-43604f5f77d8")
 	)
 	(segment
@@ -6137,7 +6192,7 @@
 		(end 151.765 87.3125)
 		(width 1)
 		(layer "F.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "0c704ef5-8fda-42a4-b385-662f3366412d")
 	)
 	(segment
@@ -6145,7 +6200,7 @@
 		(end 152.7175 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "2be5e00e-b89b-4d33-bc40-45bdd845326e")
 	)
 	(segment
@@ -6153,7 +6208,7 @@
 		(end 115.2525 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "59b6ea96-1cf3-4799-af3a-b975d15baef9")
 	)
 	(segment
@@ -6161,7 +6216,7 @@
 		(end 152.7175 88.265)
 		(width 1)
 		(layer "F.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "b093e8c3-0425-452a-bcb3-397fa1f0ff82")
 	)
 	(segment
@@ -6169,7 +6224,7 @@
 		(end 85.725 87.3125)
 		(width 1)
 		(layer "F.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "ced6b27d-99d8-4836-90d9-3907b88bcdb3")
 	)
 	(segment
@@ -6177,7 +6232,7 @@
 		(end 88.265 87.3125)
 		(width 1)
 		(layer "F.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "d96934ec-9d1d-43a8-93b3-67e3849cef02")
 	)
 	(via
@@ -6185,7 +6240,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 5)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "Net-(J26-Pin_1)")
 		(uuid "70ab42f1-d3f2-4d21-b3d0-62237dc4a3f2")
 	)
 	(via
@@ -6193,7 +6258,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 5)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "Net-(J26-Pin_1)")
 		(uuid "8cb1f511-7ffb-4a17-9279-92da62286412")
 	)
 	(via
@@ -6201,7 +6276,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 5)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "Net-(J26-Pin_1)")
 		(uuid "e26c2ce4-59df-4572-a414-61dbd949a5db")
 	)
 	(segment
@@ -6209,7 +6294,7 @@
 		(end 85.725 88.265)
 		(width 1)
 		(layer "B.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "422aa82b-3198-4a79-8880-e4723eef0ed3")
 	)
 	(segment
@@ -6217,7 +6302,7 @@
 		(end 152.7175 88.265)
 		(width 1)
 		(layer "B.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "6de5fb8f-f458-4c7d-8b85-bf209f03b6b4")
 	)
 	(segment
@@ -6225,7 +6310,7 @@
 		(end 86.995 86.995)
 		(width 1)
 		(layer "B.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "ace30140-84b1-4c57-bc30-02240577090f")
 	)
 	(segment
@@ -6233,7 +6318,7 @@
 		(end 115.2525 85.09)
 		(width 1)
 		(layer "B.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "c039bd5c-f047-48ba-80c6-82097eb8bbed")
 	)
 	(segment
@@ -6241,7 +6326,7 @@
 		(end 152.7175 89.535)
 		(width 1)
 		(layer "B.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "d22e5cfb-6d82-4a8b-a0b5-62992a254025")
 	)
 	(segment
@@ -6249,23 +6334,15 @@
 		(end 151.4475 86.995)
 		(width 1)
 		(layer "B.Cu")
-		(net 5)
+		(net "Net-(J26-Pin_1)")
 		(uuid "fea2e7b8-fd94-438e-9787-298090758d6b")
-	)
-	(segment
-		(start 119.38 80.645)
-		(end 119.38 89.535)
-		(width 1)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "85239678-7c79-47ac-b6ea-d53377318c02")
 	)
 	(segment
 		(start 122.8725 80.645)
 		(end 122.8725 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 7)
+		(net "Net-(J28-Pin_1)")
 		(uuid "330e47eb-095c-499e-ba53-09b2b252b614")
 	)
 	(segment
@@ -6273,7 +6350,7 @@
 		(end 127 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "2a1fe2c3-1c26-4cec-afe4-77142b8f45a6")
 	)
 	(segment
@@ -6281,7 +6358,7 @@
 		(end 131.1275 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "543da907-5d42-4bbe-a36f-e533a7622cf5")
 	)
 	(segment
@@ -6289,7 +6366,7 @@
 		(end 150.1775 91.440002)
 		(width 1)
 		(layer "F.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "b54f6a54-5317-4d95-8a31-32f126186896")
 	)
 	(segment
@@ -6297,7 +6374,7 @@
 		(end 88.265 91.44)
 		(width 1)
 		(layer "F.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "bfa6da72-d5fa-41b2-87dd-1e97c89cbe68")
 	)
 	(segment
@@ -6305,7 +6382,7 @@
 		(end 150.177498 91.44)
 		(width 1)
 		(layer "F.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "d49917d8-dbfc-4a21-a5bd-4eb4db47d805")
 	)
 	(via
@@ -6313,7 +6390,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 8)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "GND")
 		(uuid "1eabbe01-9459-4f20-a114-d042492a28f5")
 	)
 	(via
@@ -6321,7 +6408,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 8)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "GND")
 		(uuid "65546c81-a3c0-4d15-9e72-fb1f1d81d19d")
 	)
 	(via
@@ -6329,7 +6426,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 8)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "GND")
 		(uuid "c5252cb8-074f-4f24-9b4e-de0972c9b5f8")
 	)
 	(segment
@@ -6337,7 +6444,7 @@
 		(end 88.265 91.44)
 		(width 1)
 		(layer "B.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "0734b5d6-ea4f-418c-a0f6-71f32703f4c1")
 	)
 	(segment
@@ -6345,7 +6452,7 @@
 		(end 90.17 93.345)
 		(width 1)
 		(layer "B.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "1225a200-5297-49ec-b9d3-39152008016b")
 	)
 	(segment
@@ -6353,7 +6460,7 @@
 		(end 150.177498 91.44)
 		(width 1)
 		(layer "B.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "28557c65-198f-4b38-80de-337bb7babc2b")
 	)
 	(segment
@@ -6361,7 +6468,7 @@
 		(end 148.272498 93.345)
 		(width 1)
 		(layer "B.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "31b2fec3-eb5a-458e-a21b-d01701e38ccd")
 	)
 	(segment
@@ -6369,7 +6476,7 @@
 		(end 128.905 89.535)
 		(width 1)
 		(layer "B.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "c104cde3-b160-4000-8c99-938818d31b52")
 	)
 	(segment
@@ -6377,15 +6484,23 @@
 		(end 128.905 93.345)
 		(width 1)
 		(layer "B.Cu")
-		(net 8)
+		(net "GND")
 		(uuid "f98a228d-1ef1-41d9-9337-9172a8fa120b")
+	)
+	(segment
+		(start 99.3775 80.645)
+		(end 99.3775 89.535)
+		(width 1)
+		(layer "F.Cu")
+		(net "Net-(J2-Pin_1)")
+		(uuid "80fd471b-f599-4c9d-8612-ec7cd8bb5619")
 	)
 	(segment
 		(start 132.715 75.2475)
 		(end 132.08 75.8825)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "1d22255d-6e44-47d0-ba2f-373adfe11247")
 	)
 	(segment
@@ -6393,7 +6508,7 @@
 		(end 135.255 75.8825)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "3bdade10-66e4-45e3-b156-54ab21dd3771")
 	)
 	(segment
@@ -6401,7 +6516,7 @@
 		(end 132.715 75.2475)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "80b1576c-4480-47af-9f81-549e4933c43d")
 	)
 	(segment
@@ -6409,7 +6524,7 @@
 		(end 150.1775 78.74)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "82e12ef3-23b4-4f40-af6b-a65398c3e2bb")
 	)
 	(segment
@@ -6417,7 +6532,7 @@
 		(end 135.255 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "8e70ee3f-abd8-44cd-a186-c115d9dd9974")
 	)
 	(segment
@@ -6425,7 +6540,7 @@
 		(end 134.62 75.2475)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "9160d66d-a9f6-47d7-a8d1-2c4bda75646a")
 	)
 	(segment
@@ -6433,7 +6548,7 @@
 		(end 88.265 78.74)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "daeef4bf-e26d-4358-8680-7ad348957895")
 	)
 	(segment
@@ -6441,7 +6556,7 @@
 		(end 132.08 76.835)
 		(width 1)
 		(layer "F.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "fefc51f9-9c39-41a7-9ead-83ebfe4128c3")
 	)
 	(via
@@ -6449,7 +6564,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 9)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "+12V")
 		(uuid "36ffbb2f-4c2d-49b2-b7f3-9ace1eb97ba1")
 	)
 	(via
@@ -6457,7 +6582,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 9)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "+12V")
 		(uuid "b30b6165-7af2-4694-b96d-e06c5d45ff8a")
 	)
 	(via
@@ -6465,7 +6600,17 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net 9)
+		(capping no)
+		(covering
+			(front no)
+			(back no)
+		)
+		(plugging
+			(front no)
+			(back no)
+		)
+		(filling no)
+		(net "+12V")
 		(uuid "f26186d1-8a34-4cf0-98f0-4ce5533d6fb6")
 	)
 	(segment
@@ -6473,7 +6618,7 @@
 		(end 88.265 78.74)
 		(width 1)
 		(layer "B.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "4f2b560a-7f4c-4eda-a54b-9ebab7a19400")
 	)
 	(segment
@@ -6481,7 +6626,7 @@
 		(end 150.1775 78.74)
 		(width 1)
 		(layer "B.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "75a32f8a-302d-4a86-9e66-0afb3b8e49f6")
 	)
 	(segment
@@ -6489,7 +6634,7 @@
 		(end 148.2725 76.835)
 		(width 1)
 		(layer "B.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "7898ee0d-0161-4ec7-a4ce-51a58cfebd3b")
 	)
 	(segment
@@ -6497,7 +6642,7 @@
 		(end 132.08 76.835)
 		(width 1)
 		(layer "B.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "a8c0b9ed-d67c-4592-aa8a-85d7cc9aa782")
 	)
 	(segment
@@ -6505,15 +6650,47 @@
 		(end 90.17 76.835)
 		(width 1)
 		(layer "B.Cu")
-		(net 9)
+		(net "+12V")
 		(uuid "b1f1a90c-4f5c-4f1b-85ea-fbc0d7515821")
+	)
+	(segment
+		(start 119.38 80.645)
+		(end 119.38 89.535)
+		(width 1)
+		(layer "F.Cu")
+		(net "Net-(J27-Pin_1)")
+		(uuid "85239678-7c79-47ac-b6ea-d53377318c02")
+	)
+	(segment
+		(start 95.885 80.645)
+		(end 95.885 88.9)
+		(width 1)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_1)")
+		(uuid "58d24e97-af67-4592-8c7b-93c917f2091a")
+	)
+	(segment
+		(start 103.505 89.535)
+		(end 103.505 80.645)
+		(width 1)
+		(layer "F.Cu")
+		(net "Net-(J23-Pin_1)")
+		(uuid "6e9e060a-5acd-4fc0-96b9-b76f99e21451")
+	)
+	(segment
+		(start 103.505 80.645)
+		(end 107.6325 80.645)
+		(width 1)
+		(layer "F.Cu")
+		(net "Net-(J23-Pin_1)")
+		(uuid "c1e77b8e-bfe9-45d0-bafb-b11e799b5d87")
 	)
 	(segment
 		(start 139.3825 80.645)
 		(end 139.3825 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 10)
+		(net "Net-(J12-Pin_1)")
 		(uuid "d9a6f444-1bfe-4fd6-9458-326b1e8bd1fe")
 	)
 	(segment
@@ -6521,12 +6698,10 @@
 		(end 142.875 89.535)
 		(width 1)
 		(layer "F.Cu")
-		(net 11)
+		(net "Net-(J13-Pin_1)")
 		(uuid "dff03ae9-50ee-415c-8dda-046b55b56066")
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "B.Cu")
 		(uuid "d8e98e37-8abd-4fa6-a094-9c0fff999fdc")
 		(hatch edge 0.508)
@@ -6534,10 +6709,10 @@
 			(clearance 0.508)
 		)
 		(min_thickness 0.254)
-		(filled_areas_thickness no)
 		(fill yes
 			(thermal_gap 0.508)
 			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
@@ -6546,25 +6721,11 @@
 		)
 		(filled_polygon
 			(layer "B.Cu")
-			(island)
+			(island yes)
 			(pts
-				(xy 114.486696 84.213503) (xy 114.533189 84.267159) (xy 114.543293 84.337433) (xy 114.513799 84.402013)
-				(xy 114.50767 84.408596) (xy 114.469149 84.447116) (xy 114.469144 84.447123) (xy 114.358779 84.612296)
-				(xy 114.282758 84.795825) (xy 114.282756 84.79583) (xy 114.244 84.990668) (xy 114.244 85.8605) (xy 114.223998 85.928621)
-				(xy 114.170342 85.975114) (xy 114.118 85.9865) (xy 112.593924 85.9865) (xy 112.525803 85.966498)
-				(xy 112.47931 85.912842) (xy 112.469206 85.842568) (xy 112.4987 85.777988) (xy 112.504829 85.771405)
-				(xy 112.543353 85.732881) (xy 112.653721 85.567704) (xy 112.729744 85.384169) (xy 112.7685 85.189329)
-				(xy 112.7685 84.319501) (xy 112.788502 84.25138) (xy 112.842158 84.204887) (xy 112.8945 84.193501)
-				(xy 114.418575 84.193501)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(island)
-			(pts
-				(xy 154.564621 74.315002) (xy 154.611114 74.368658) (xy 154.6225 74.421) (xy 154.6225 95.759) (xy 154.602498 95.827121)
-				(xy 154.548842 95.873614) (xy 154.4965 95.885) (xy 83.946 95.885) (xy 83.877879 95.864998) (xy 83.831386 95.811342)
-				(xy 83.82 95.759) (xy 83.82 91.340668) (xy 87.2565 91.340668) (xy 87.2565 91.340671) (xy 87.2565 91.539329)
+				(xy 154.564121 74.315502) (xy 154.610614 74.369158) (xy 154.622 74.4215) (xy 154.622 95.7585) (xy 154.601998 95.826621)
+				(xy 154.548342 95.873114) (xy 154.496 95.8845) (xy 83.9465 95.8845) (xy 83.878379 95.864498) (xy 83.831886 95.810842)
+				(xy 83.8205 95.7585) (xy 83.8205 91.340668) (xy 87.2565 91.340668) (xy 87.2565 91.340671) (xy 87.2565 91.539329)
 				(xy 87.295256 91.734168) (xy 87.371279 91.917704) (xy 87.481647 92.082881) (xy 87.481649 92.082883)
 				(xy 89.527113 94.128349) (xy 89.527118 94.128353) (xy 89.527119 94.128354) (xy 89.692296 94.238722)
 				(xy 89.822075 94.292477) (xy 89.875831 94.314744) (xy 90.070671 94.3535) (xy 90.070672 94.3535)
@@ -6589,7 +6750,7 @@
 				(xy 88.364329 90.4315) (xy 88.165671 90.4315) (xy 88.165668 90.4315) (xy 87.970831 90.470256) (xy 87.970826 90.470258)
 				(xy 87.787296 90.546279) (xy 87.622123 90.656644) (xy 87.622116 90.656649) (xy 87.481649 90.797116)
 				(xy 87.481644 90.797123) (xy 87.371279 90.962296) (xy 87.295258 91.145826) (xy 87.295256 91.145831)
-				(xy 87.2565 91.340668) (xy 83.82 91.340668) (xy 83.82 80.545668) (xy 84.7165 80.545668) (xy 84.7165 82.014331)
+				(xy 87.2565 91.340668) (xy 83.8205 91.340668) (xy 83.8205 80.545668) (xy 84.7165 80.545668) (xy 84.7165 82.014331)
 				(xy 84.741417 82.139596) (xy 84.755256 82.209169) (xy 84.789267 82.291279) (xy 84.831279 82.392704)
 				(xy 84.941647 82.557881) (xy 86.35212 83.968355) (xy 86.517298 84.078723) (xy 86.62481 84.123255)
 				(xy 86.700832 84.154745) (xy 86.895672 84.193501) (xy 86.895673 84.193501) (xy 87.09433 84.193501)
@@ -6643,36 +6804,35 @@
 				(xy 151.934149 80.002116) (xy 151.934144 80.002123) (xy 151.823779 80.167296) (xy 151.747758 80.350825)
 				(xy 151.747756 80.35083) (xy 151.709 80.545668) (xy 151.709 81.127576) (xy 151.688998 81.195697)
 				(xy 151.672095 81.216671) (xy 150.74917 82.139596) (xy 150.686858 82.173622) (xy 150.660075 82.176501)
-				(xy 111.865562 82.176501) (xy 111.865542 82.1765) (xy 111.859329 82.1765) (xy 111.660671 82.1765)
-				(xy 111.654458 82.1765) (xy 111.654438 82.176501) (xy 87.464926 82.176501) (xy 87.396805 82.156499)
-				(xy 87.375831 82.139596) (xy 86.770405 81.53417) (xy 86.736379 81.471858) (xy 86.7335 81.445075)
-				(xy 86.7335 80.545672) (xy 86.733499 80.545668) (xy 86.726248 80.509214) (xy 86.694744 80.350831)
-				(xy 86.618721 80.167296) (xy 86.508353 80.002119) (xy 86.413882 79.907648) (xy 129.827 79.907648)
-				(xy 129.827 80.112352) (xy 129.859023 80.314534) (xy 129.859024 80.314538) (xy 129.870816 80.350831)
-				(xy 129.92228 80.509219) (xy 129.940854 80.545672) (xy 130.015214 80.691612) (xy 130.135534 80.85722)
-				(xy 130.280279 81.001965) (xy 130.445887 81.122285) (xy 130.44589 81.122287) (xy 130.628281 81.21522)
-				(xy 130.822966 81.278477) (xy 131.025148 81.3105) (xy 131.025151 81.3105) (xy 131.229849 81.3105)
-				(xy 131.229852 81.3105) (xy 131.432034 81.278477) (xy 131.626719 81.21522) (xy 131.80911 81.122287)
-				(xy 131.974719 81.001966) (xy 132.119466 80.857219) (xy 132.239787 80.69161) (xy 132.33272 80.509219)
-				(xy 132.395977 80.314534) (xy 132.428 80.112352) (xy 132.428 79.907648) (xy 132.395977 79.705466)
-				(xy 132.33272 79.510781) (xy 132.239787 79.32839) (xy 132.119466 79.162781) (xy 132.119465 79.162779)
-				(xy 131.97472 79.018034) (xy 131.809112 78.897714) (xy 131.802291 78.894239) (xy 131.626719 78.80478)
-				(xy 131.626716 78.804779) (xy 131.626714 78.804778) (xy 131.432038 78.741524) (xy 131.432036 78.741523)
-				(xy 131.432034 78.741523) (xy 131.229852 78.7095) (xy 131.025148 78.7095) (xy 130.822966 78.741523)
-				(xy 130.822964 78.741523) (xy 130.822961 78.741524) (xy 130.628285 78.804778) (xy 130.628279 78.804781)
-				(xy 130.445887 78.897714) (xy 130.280279 79.018034) (xy 130.135534 79.162779) (xy 130.015214 79.328387)
-				(xy 129.922281 79.510779) (xy 129.922278 79.510785) (xy 129.859024 79.705461) (xy 129.859023 79.705464)
-				(xy 129.859023 79.705466) (xy 129.827 79.907648) (xy 86.413882 79.907648) (xy 86.367881 79.861647)
-				(xy 86.202704 79.751279) (xy 86.019169 79.675256) (xy 85.824331 79.6365) (xy 85.824329 79.6365)
-				(xy 85.625671 79.6365) (xy 85.625668 79.6365) (xy 85.43083 79.675256) (xy 85.430825 79.675258) (xy 85.247296 79.751279)
-				(xy 85.082123 79.861644) (xy 85.082116 79.861649) (xy 84.941649 80.002116) (xy 84.941644 80.002123)
-				(xy 84.831279 80.167296) (xy 84.755258 80.350825) (xy 84.755256 80.35083) (xy 84.7165 80.545668)
-				(xy 83.82 80.545668) (xy 83.82 78.640668) (xy 87.2565 78.640668) (xy 87.2565 78.839331) (xy 87.292047 79.018034)
-				(xy 87.295256 79.034168) (xy 87.371279 79.217704) (xy 87.481647 79.382881) (xy 87.622119 79.523353)
-				(xy 87.787296 79.633721) (xy 87.970832 79.709744) (xy 88.165671 79.7485) (xy 88.165672 79.7485)
-				(xy 88.364328 79.7485) (xy 88.364329 79.7485) (xy 88.559168 79.709744) (xy 88.742704 79.633721)
-				(xy 88.907881 79.523353) (xy 90.55083 77.880405) (xy 90.613142 77.846379) (xy 90.639925 77.8435)
-				(xy 131.980671 77.8435) (xy 134.520671 77.8435) (xy 147.802576 77.8435) (xy 147.870697 77.863502)
+				(xy 111.859334 82.176501) (xy 111.859329 82.1765) (xy 111.660671 82.1765) (xy 111.660666 82.176501)
+				(xy 87.464926 82.176501) (xy 87.396805 82.156499) (xy 87.375831 82.139596) (xy 86.770405 81.53417)
+				(xy 86.736379 81.471858) (xy 86.7335 81.445075) (xy 86.7335 80.545672) (xy 86.733499 80.545668)
+				(xy 86.726248 80.509214) (xy 86.694744 80.350831) (xy 86.618721 80.167296) (xy 86.508353 80.002119)
+				(xy 86.413882 79.907648) (xy 129.827 79.907648) (xy 129.827 80.112352) (xy 129.859023 80.314534)
+				(xy 129.859024 80.314538) (xy 129.870816 80.350831) (xy 129.92228 80.509219) (xy 129.940854 80.545672)
+				(xy 130.015214 80.691612) (xy 130.135534 80.85722) (xy 130.280279 81.001965) (xy 130.445887 81.122285)
+				(xy 130.44589 81.122287) (xy 130.628281 81.21522) (xy 130.822966 81.278477) (xy 131.025148 81.3105)
+				(xy 131.025151 81.3105) (xy 131.229849 81.3105) (xy 131.229852 81.3105) (xy 131.432034 81.278477)
+				(xy 131.626719 81.21522) (xy 131.80911 81.122287) (xy 131.974719 81.001966) (xy 132.119466 80.857219)
+				(xy 132.239787 80.69161) (xy 132.33272 80.509219) (xy 132.395977 80.314534) (xy 132.428 80.112352)
+				(xy 132.428 79.907648) (xy 132.395977 79.705466) (xy 132.33272 79.510781) (xy 132.239787 79.32839)
+				(xy 132.119466 79.162781) (xy 132.119465 79.162779) (xy 131.97472 79.018034) (xy 131.809112 78.897714)
+				(xy 131.802291 78.894239) (xy 131.626719 78.80478) (xy 131.626716 78.804779) (xy 131.626714 78.804778)
+				(xy 131.432038 78.741524) (xy 131.432036 78.741523) (xy 131.432034 78.741523) (xy 131.229852 78.7095)
+				(xy 131.025148 78.7095) (xy 130.822966 78.741523) (xy 130.822964 78.741523) (xy 130.822961 78.741524)
+				(xy 130.628285 78.804778) (xy 130.628279 78.804781) (xy 130.445887 78.897714) (xy 130.280279 79.018034)
+				(xy 130.135534 79.162779) (xy 130.015214 79.328387) (xy 129.922281 79.510779) (xy 129.922278 79.510785)
+				(xy 129.859024 79.705461) (xy 129.859023 79.705464) (xy 129.859023 79.705466) (xy 129.827 79.907648)
+				(xy 86.413882 79.907648) (xy 86.367881 79.861647) (xy 86.202704 79.751279) (xy 86.019169 79.675256)
+				(xy 85.824331 79.6365) (xy 85.824329 79.6365) (xy 85.625671 79.6365) (xy 85.625668 79.6365) (xy 85.43083 79.675256)
+				(xy 85.430825 79.675258) (xy 85.247296 79.751279) (xy 85.082123 79.861644) (xy 85.082116 79.861649)
+				(xy 84.941649 80.002116) (xy 84.941644 80.002123) (xy 84.831279 80.167296) (xy 84.755258 80.350825)
+				(xy 84.755256 80.35083) (xy 84.7165 80.545668) (xy 83.8205 80.545668) (xy 83.8205 78.640668) (xy 87.2565 78.640668)
+				(xy 87.2565 78.839331) (xy 87.292047 79.018034) (xy 87.295256 79.034168) (xy 87.371279 79.217704)
+				(xy 87.481647 79.382881) (xy 87.622119 79.523353) (xy 87.787296 79.633721) (xy 87.970832 79.709744)
+				(xy 88.165671 79.7485) (xy 88.165672 79.7485) (xy 88.364328 79.7485) (xy 88.364329 79.7485) (xy 88.559168 79.709744)
+				(xy 88.742704 79.633721) (xy 88.907881 79.523353) (xy 90.55083 77.880405) (xy 90.613142 77.846379)
+				(xy 90.639925 77.8435) (xy 131.980671 77.8435) (xy 134.520671 77.8435) (xy 147.802576 77.8435) (xy 147.870697 77.863502)
 				(xy 147.891666 77.8804) (xy 149.534619 79.523354) (xy 149.699796 79.633722) (xy 149.883332 79.709744)
 				(xy 150.078171 79.7485) (xy 150.078172 79.7485) (xy 150.276828 79.7485) (xy 150.276829 79.7485)
 				(xy 150.471669 79.709744) (xy 150.655204 79.633722) (xy 150.820381 79.523354) (xy 150.960854 79.382881)
@@ -6684,9 +6844,10 @@
 				(xy 90.070671 75.8265) (xy 90.070668 75.8265) (xy 89.87583 75.865256) (xy 89.875824 75.865258) (xy 89.822075 75.887522)
 				(xy 89.692295 75.941278) (xy 89.527119 76.051645) (xy 89.527113 76.05165) (xy 87.481649 78.097116)
 				(xy 87.481644 78.097123) (xy 87.371279 78.262296) (xy 87.295258 78.445826) (xy 87.295256 78.445831)
-				(xy 87.2565 78.640668) (xy 83.82 78.640668) (xy 83.82 74.421) (xy 83.840002 74.352879) (xy 83.893658 74.306386)
-				(xy 83.946 74.295) (xy 154.4965 74.295)
+				(xy 87.2565 78.640668) (xy 83.8205 78.640668) (xy 83.8205 74.4215) (xy 83.840502 74.353379) (xy 83.894158 74.306886)
+				(xy 83.9465 74.2955) (xy 154.496 74.2955)
 			)
 		)
 	)
+	(embedded_fonts no)
 )
